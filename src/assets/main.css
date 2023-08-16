@@ -1,0 +1,39 @@
+@font-face {
+  font-family: pixel;
+  src: url(./fonts/PressStart2P-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 180, 109);
+}
+
+a,
+button {
+  all: unset;
+}
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+#app {
+  height: 100vh;
+  font-family: pixel;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #app {
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
