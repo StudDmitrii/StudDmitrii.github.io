@@ -24,7 +24,7 @@ onMounted(() => {
                     <td>время</td>
                 </tr>
                 <tr v-for="leader in store.state.leaders">
-                    <td>{{ leader['mode']['rows'] }} x {{ leader['mode']['cols'] }}, бомб: {{ leader['mode']['bombs'] }}</td>
+                    <td>{{ leader['mode']['rows'] }} x {{ leader['mode']['cols'] }}, бомб:{{ leader['mode']['bombs'] }}</td>
                     <td class="player-time">{{ leader['time'] }}</td>
                 </tr>
             </table>
@@ -52,6 +52,7 @@ onMounted(() => {
         border-collapse: collapse;
 
         td{
+            line-height: 30px;
             border: 2px solid black;
             padding: 10px;
             background-color: rgb(221, 138, 82);

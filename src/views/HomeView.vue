@@ -46,8 +46,11 @@ function Validate() {
     if (customRows.value * customCols.value < 2) {
         validateErrorMsg.value = '[минимум 2 клетки]'
     }
-    if (Number(customBombs.value) + 1 > customCols.value * customRows.value || customBombs < 0) {
+    if (Number(customBombs.value) + 1 > customCols.value * customRows.value) {
         validateErrorMsg.value = '[бомб должно быть меньше чем клеток]'
+    }
+    if (customBombs.value <= 0) {
+        validateErrorMsg.value = '[бомб должно быть больше нуля]'
     }
     CheckValidErrors();
 }
@@ -256,6 +259,15 @@ function Validate() {
             &:hover{
                 filter:brightness(0.8);
             }
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .start-game-but{
+            width: 50px;
+        }
+        .leaderboard-but{
+            font-size: 14px;
         }
     }
 </style>

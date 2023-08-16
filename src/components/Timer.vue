@@ -49,8 +49,8 @@ function StartTimer() {
         text-shadow: 1px 1px 0 black;
 
         &::before{
-            width: 5vw;
-            height: 5vh;
+            width: 40px;
+            height: 40px;
             content: '';
             background-image: $timer;
             background-size:contain;

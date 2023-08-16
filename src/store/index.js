@@ -14,11 +14,11 @@ let store = createStore({
 
         SortLeaders(state) {
             state.leaders.sort((a, b) => a['time'] - b['time']);
+            state.leaders.length = 10;
         },
 
         AddLeader(state, data) {
             let mem = JSON.parse(localStorage.getItem('leaders')).leaders;
-            if (mem.length >= 10) return;
             state.leaders = mem;
             state.leaders.push(data);
             localStorage.removeItem('leaders');

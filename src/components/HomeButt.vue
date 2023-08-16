@@ -20,13 +20,20 @@ $home: url(../assets/img/home.png);
         align-items: center;
 
         &::before{
-            width: 5vw;
-            height: 5vh;
+            width: 40px;
+            height: 40px;
             content: '';
             background-image: $home;
             background-size:contain;
             background-position: center;
             background-repeat: no-repeat;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .home-butt{
+            width: 40px;
+            grid-template-columns: auto;
         }
     }
 

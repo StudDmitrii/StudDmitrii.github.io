@@ -241,8 +241,8 @@ function ResetPage() {
         align-items: center;
 
         &::before{
-            width: 5vw;
-            height: 5vh;
+            width: 40px;
+            height: 40px;
             content: '';
             background-image: $reset;
             background-size:contain;
@@ -254,15 +254,15 @@ function ResetPage() {
     .bomb-count{
 
         display: grid;
-        width: 150px;
+        width: 100px;
         overflow: hidden;
         grid-template-columns: auto 1fr;
         justify-items: start;
         align-items: center;
 
         &::before{
-            width: 5vw;
-            height: 5vh;
+            width: 40px;
+            height: 40px;
             content: '';
             background-image: $flag;
             background-size:contain;
@@ -273,7 +273,7 @@ function ResetPage() {
 
     @media screen and (max-width: 1000px){
         nav{
-            background-color: rgb(240, 183, 108);
+            //background-color: rgb(240, 183, 108);
             position: fixed;
             left: 0; top: 0;
             display: grid;
@@ -284,6 +284,11 @@ function ResetPage() {
         .error{
             position: fixed;
             left: 0; top: 0;
+        }
+
+        .reset-butt{
+            width: 40px;
+            grid-template-columns: auto;
         }
     }
 </style>
